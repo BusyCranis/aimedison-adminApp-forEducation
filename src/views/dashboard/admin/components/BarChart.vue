@@ -28,17 +28,26 @@ export default {
   },
   data() {
     return {
-      chart: null
+      chart: null,
+
+      dailyStatResponse: {}
+
     }
   },
-  created() {
+  async created() {
     console.log(axios)
-    // axios.post("http://175.119.224.227/admin/daily/chatcount", {
-    //   shopId: "aimedison"
-    // })
+    console.log(this.dailyStatResponse)
+    this.dailyStatResponse = await axios.post('http://175.119.224.227:5003/admin/daily/chatcount', {
+      shopId: 'aimedison'
+    })
+
+    console.log(this.dailyStatResponse)
+    console.log(this.dailyStatResponse.data)
   },
 
   mounted() {
+    console.log(this.dailyStatResponse)
+
     this.$nextTick(() => {
       this.initChart()
     })
