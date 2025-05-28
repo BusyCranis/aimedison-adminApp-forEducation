@@ -31,6 +31,10 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     port: port,
+    public: "http://localhost:9527",
+    watchOptions: {
+      poll: true
+    },
     open: true,
     overlay: {
       warnings: false,
