@@ -62,7 +62,7 @@ module.exports = app => {
   console.log(mockDir);
 
   // watch files, hot reload mock server
-  chokidar.watch("/Users/munjeonghwan/aimedisonfileserver/adminaimedisonui/vue-element-admin/", {
+  chokidar.watch("/Users/munjeonghwan/aimedisonfileserver/adminaimedisonui/vue-element-admin/src", {
     ignored: /mock-server/,
     ignoreInitial: true
   }).on('all', (event, path) => {
