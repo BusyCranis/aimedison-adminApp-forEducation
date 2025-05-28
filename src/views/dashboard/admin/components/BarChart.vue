@@ -33,6 +33,9 @@ export default {
   },
   created() {
     console.log(axios)
+    // axios.post("http://175.119.224.227/admin/daily/chatcount", {
+    //   shopId: "aimedison"
+    // })
   },
 
   mounted() {
