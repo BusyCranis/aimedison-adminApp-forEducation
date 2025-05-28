@@ -111,7 +111,7 @@ export default {
           }
         }],
         series: [{
-          name: 'pageA',
+          name: '대화 수',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
