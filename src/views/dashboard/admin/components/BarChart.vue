@@ -68,10 +68,19 @@ export default {
     initChart() {
       console.log(this.dailyStatResponse.data)
       const monthlyKeyNamesForAggr = Object.keys(this.dailyStatResponse.data)
+      const dailyValueArray = []
 
       console.log(monthlyKeyNamesForAggr)
 
+      for (let i = 0; i < monthlyKeyNamesForAggr.length; i++) {
+        console.log(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]])
+
+        dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
+      }
+
       this.chart = echarts.init(this.$el, 'macarons')
+
+      console.log(dailyValueArray)
 
       this.chart.setOption({
         tooltip: {
