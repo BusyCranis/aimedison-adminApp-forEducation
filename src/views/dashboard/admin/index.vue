@@ -4,9 +4,9 @@
 
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
 
-    <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
+    <!-- <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
-    </el-row>
+    </el-row> -->
 
     <select />년 <select />월 <select />일  ~  <select />년 <select />월 <select />일
 
@@ -46,7 +46,7 @@
 <script>
 import GithubCorner from '@/components/GithubCorner'
 import PanelGroup from './components/PanelGroup'
-import LineChart from './components/LineChart'
+// import LineChart from './components/LineChart'
 // import RaddarChart from './components/RaddarChart'
 // import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
@@ -78,7 +78,7 @@ export default {
   components: {
     GithubCorner,
     PanelGroup,
-    LineChart,
+    // LineChart,
     // RaddarChart,
     // PieChart,
     BarChart,
