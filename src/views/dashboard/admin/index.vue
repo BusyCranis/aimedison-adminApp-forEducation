@@ -20,7 +20,7 @@
         </div>
       </el-col> -->
 
-      <el-col :xs="24" :sm="24" :lg="8">
+      <el-col>
         <div class="chart-wrapper">
           <bar-chart />
         </div>
