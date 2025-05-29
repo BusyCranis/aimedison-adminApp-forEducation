@@ -249,6 +249,8 @@ export default {
       console.log(this.endYear)
       console.log(this.endMonth)
       console.log(this.endDay)
+      console.log(window["dailyChatKeyNamesForAggr"])
+      console.log(window["aimedisonDailyChatValueDataArray"])
 
 
 
