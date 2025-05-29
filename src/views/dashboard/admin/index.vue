@@ -180,6 +180,11 @@ export default {
 
       console.log(dailyValueArray)
 
+      window["dailyChatKeyNamesForAggr"] = monthlyKeyNamesForAggr;
+
+      window["aimedisonDailyChatValueDataArray"] = dailyValueArray;
+
+
       this.chart.setOption({
         tooltip: {
           trigger: 'axis',
@@ -245,7 +250,7 @@ export default {
       console.log(this.endMonth)
       console.log(this.endDay)
 
-      
+
 
 
 
