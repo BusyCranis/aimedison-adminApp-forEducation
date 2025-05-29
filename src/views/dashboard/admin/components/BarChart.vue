@@ -35,26 +35,11 @@ export default {
     }
   },
   created() {
-    // console.log(axios)
-    // console.log(this.dailyStatResponse)
-    // this.dailyStatResponse = await axios.post('http://175.119.224.227:5003/admin/daily/chatcount', {
-    //   shopId: 'aimedison'
-    // })
 
-    // console.log(this.dailyStatResponse)
-    // console.log(this.dailyStatResponse.data)
   },
 
   async mounted() {
     console.log(this.$el)
-
-    // this.dailyStatResponse = await axios.post('http://175.119.224.227:5003/admin/daily/chatcount', {
-    //   shopId: 'aimedison'
-    // })
-
-    // this.$nextTick(() => {
-    //   this.initChart()
-    // })
   },
   beforeDestroy() {
     if (!this.chart) {
@@ -76,8 +61,6 @@ export default {
 
         dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
       }
-
-      // console.log(this.$el);
 
       this.chart = echarts.init(this.$el, 'macarons')
 
