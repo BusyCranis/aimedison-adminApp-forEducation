@@ -254,10 +254,18 @@ export default {
       // console.log(window["aimedisonDailyChatValueDataArray"])
 
 
+
       if(this.startYear === 0 || this.startMonth === 0 || this.startDay === 0 || this.endYear === 0 || this.endMonth === 0 || this.endDay === 0) {
         alert("올바른 날짜를 선택해주세요.")
 
         return
+      } else if(this.startYear > this.endYear) {
+        alert("올바른 날짜를 선택해주세요.")
+
+        return
+      } else if() {
+
+        
       }
     
 
