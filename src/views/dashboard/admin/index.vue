@@ -8,7 +8,7 @@
       <line-chart :chart-data="lineChartData" />
     </el-row> -->
 
-    <select> <option /> </select>년 <select><option /></select>월 <input type="number">일  ~  <select><option /></select>년 <select><option /></select>월 <input type="number">일        <button> 검색 </button>
+    <select> <option v-for="item in yearValue"> {{ item }} </option>  </select>년 <select><option /></select>월 <input type="number">일  ~  <select><option /></select>년 <select><option /></select>월 <input type="number">일        <button> 검색 </button>
 
     <el-row :gutter="32">
       <!-- <el-col :xs="24" :sm="24" :lg="8">
@@ -95,16 +95,23 @@ export default {
 
       dailyStatResponse: {},
 
-      yearValue: [2024, 2025],
+      yearValue: [],
       monthValue: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
     }
   },
   created() {
+    // this.yearValue = [2024, 2025]
+
+    // this.monthValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
   },
 
   async mounted() {
+    this.yearValue = [2024, 2025]
+
+    console.log(this.yearValue)
+
     this.dailyStatResponse = await axios.post('http://175.119.224.227:5003/admin/daily/chatcount', {
       shopId: 'aimedison'
     })
