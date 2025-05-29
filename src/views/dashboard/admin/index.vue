@@ -260,15 +260,15 @@ export default {
 
         return
       } else if(this.startYear > this.endYear) {
-        alert("올바른 날짜를 선택해주세요.")
+        alert("올바른 기간을 선택해주세요.")
 
         return
       } else if(this.startYear === this.endYear && this.startMonth > this.endMonth) {
-        alert("올바른 날짜를 선택해주세요.")
+        alert("올바른 기간을 선택해주세요.")
 
         return
       } else if(this.startYear === this.endYear && this.startMonth === this.endMonth && this.startDay > this.endDay) {
-        alert("올바른 날짜를 선택해주세요.")
+        alert("올바른 기간을 선택해주세요.")
 
         return
       } else {
@@ -282,6 +282,11 @@ export default {
           endMonth: this.endMonth,
           endDay: this.endDay
         })
+
+
+
+        console.log(searchResult);
+        console.log(searchResult.data);
       }
 
 
