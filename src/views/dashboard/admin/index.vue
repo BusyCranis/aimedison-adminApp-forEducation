@@ -28,7 +28,6 @@
     <input type="number"    v-model="endDay"    />일        
 
     <button   @click="searchChatCountByDate" > 검색 </button>
-
     <button   @click="setAllPeriodChatChart" > 전체기간 보기 </button>
 
 
