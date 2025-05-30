@@ -513,7 +513,15 @@ export default {
       for (let i = 0; i < monthlyKeyNamesForAggr.length; i++) {
         console.log(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]])
 
-        dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
+
+
+
+
+
+
+        
+
+        // dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
       }
 
      
