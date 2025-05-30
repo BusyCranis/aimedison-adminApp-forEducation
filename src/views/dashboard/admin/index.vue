@@ -653,7 +653,7 @@ export default {
 
           console.log(searchResult.data[monthlyKeyNamesForAggr[i]])
           for(let j = 0; j <= searchResult.data[monthlyKeyNamesForAggr[i]].length; j++) {
-            // console.log(searchResult.data[monthlyKeyNamesForAggr[i]][j].answerObjectDetail.tokenlength.total_tokens);
+         
             if(j <= searchResult.data[monthlyKeyNamesForAggr[i]].length - 1) {
               console.log(searchResult.data[monthlyKeyNamesForAggr[i]][j].answerObjectDetail.tokenlength.total_tokens);
               dailyChatTokenCount = dailyChatTokenCount + searchResult.data[monthlyKeyNamesForAggr[i]][j].answerObjectDetail.tokenlength.total_tokens;
@@ -669,7 +669,7 @@ export default {
 
 
 
-        
+
 
 
 
