@@ -522,10 +522,7 @@ export default {
           if(j <= this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length - 1) {
             dailyChatTokenCount = dailyChatTokenCount + this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]][j].answerObjectDetail.tokenlength.total_tokens;
           } else if(j === this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length) {
-
-
-
-
+            dailyValueArray.push(dailyChatTokenCount);
           }
 
 
