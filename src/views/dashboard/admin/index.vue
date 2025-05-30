@@ -569,7 +569,7 @@ export default {
           }
         }],
         series: [{
-          name: '대화 수',
+          name: '사용량(글자 수)',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
@@ -697,7 +697,7 @@ export default {
             }
           }],
           series: [{
-            name: '대화 수',
+            name: '사용량(글자 수)',
             type: 'bar',
             stack: 'vistors',
             barWidth: '60%',
