@@ -15,7 +15,7 @@
     <el-row :gutter="32">
 
 
-      일별 대화 수 집계 <br>
+      일별 사용량(글자 수) 집계 <br>
 
       <select  v-model="startTCyear">
         <option   v-for="item in yearTCvalue"   :value="item"> {{ item }} </option>  
