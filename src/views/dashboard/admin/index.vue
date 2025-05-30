@@ -12,6 +12,9 @@
 
 
 
+    <el-row :gutter="32">
+
+
     일별 대화 수 집계
     <br>
 
@@ -35,20 +38,8 @@
     <button   @click="setAllPeriodChatChart" > 전체기간 보기 </button>
 
 
-
-
-    <el-row :gutter="32">
-      <!-- <el-col :xs="24" :sm="24" :lg="8">
-        <div class="chart-wrapper">
-          <raddar-chart />
-        </div>
-      </el-col>
-      <el-col :xs="24" :sm="24" :lg="8">
-        <div class="chart-wrapper">
-          <pie-chart />
-        </div>
-      </el-col> -->
-
+    <!-- <el-row :gutter="32"> -->
+     
       <el-col>
         <div class="chart-wrapper">
           <!-- <bar-chart /> -->
