@@ -202,10 +202,18 @@ export default {
       shopId: 'aimedison'
     })
 
+
+    // this.dailyTokenCountRes = await axios.post('http://175.119.224.227:5003', {
+    //   shopId: 'aimedison'
+    // })
+
     console.log(this.$el)
 
     this.$nextTick(() => {
       this.initChart()
+
+      // this.initTokenCountChart()
+
     })
   },
   beforeDestroy() {
@@ -497,6 +505,12 @@ export default {
       })
 
     },
+
+
+    initTokenCountChart() {
+
+    },    
+
 
 
     async searchChatTokenCountByDate() {
