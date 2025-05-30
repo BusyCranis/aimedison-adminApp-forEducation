@@ -601,6 +601,32 @@ export default {
 
 
     async searchChatTokenCountByDate() {
+      console.log(this.startTCyear)
+      console.log(this.startTCmonth)
+      console.log(this.startTCday)
+      console.log(this.endTCyear)
+      console.log(this.endTCmonth)
+      console.log(this.endTCday)
+
+      if(this.startTCyear === 0 || this.startTCmonth === 0 || this.startTCday === 0 || this.endTCyear === 0 || this.endTCmonth === 0 || this.endTCday === 0) {
+        window.alert("올바른 날짜를 선택해주세요.")
+
+        return
+      } else if(this.startTCyear > this.endTCyear) {
+        window.alert("올바른 기간을 선택해주세요.")
+
+        return
+      } else if(this.startTCyear === this.endTCyear && this.startTCmonth > this.endTCmonth) {
+        window.alert("올바른 기간을 선택해주세요.")
+
+        return
+      } else if(this.startTCyear === this.endTCyear && this.startTCmonth === this.endTCmonth && this.startTCday > this.endTCday) {
+        window.alert("올바른 기간을 선택해주세요.")
+
+        return
+      } else {
+        
+      }
 
 
 
