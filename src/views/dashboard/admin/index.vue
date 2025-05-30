@@ -203,10 +203,6 @@ export default {
     })
 
 
-    // this.dailyTokenCountRes = await axios.post('http://175.119.224.227:5003/admin/tokencount/daily', {
-    //   shopId: 'aimedison'
-    // })
-
     console.log(this.$el)
 
     this.$nextTick(() => {
