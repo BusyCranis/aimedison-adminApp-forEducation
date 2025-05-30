@@ -369,10 +369,79 @@ export default {
 
     },
 
-    
+
 
     async setAllPeriodChatChart() {
+      console.log(this.dailyStatResponse.data)
+      const monthlyKeyNamesForAggr = Object.keys(this.dailyStatResponse.data)
+      const dailyValueArray = []
 
+      console.log(monthlyKeyNamesForAggr)
+
+      for (let i = 0; i < monthlyKeyNamesForAggr.length; i++) {
+        console.log(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]])
+
+        dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
+      }
+
+
+
+
+
+      this.chart.setOption({
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+          }
+        },
+        grid: {
+          top: 10,
+          left: '2%',
+          right: '2%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          // data: ['월요일', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          data: monthlyKeyNamesForAggr,
+          axisTick: {
+            alignWithLabel: true
+          }
+        }],
+        yAxis: [{
+          type: 'value',
+          axisTick: {
+            show: false
+          }
+        }],
+        series: [{
+          name: '대화 수',
+          type: 'bar',
+          stack: 'vistors',
+          barWidth: '60%',
+          // data: [79, 52, 200, 134, 190, 130],
+          data: dailyValueArray,
+          animationDuration
+        }
+        // {
+        //   name: 'pageB',
+        //   type: 'bar',
+        //   stack: 'vistors',
+        //   barWidth: '60%',
+        //   data: [80, 52, 200, 334, 390, 330, 220],
+        //   animationDuration
+        // }, {
+        //   name: 'pageC',
+        //   type: 'bar',
+        //   stack: 'vistors',
+        //   barWidth: '60%',
+        //   data: [30, 52, 200, 334, 390, 330, 220],
+        //   animationDuration
+        // }
+        ]
+      })
 
     }
 
