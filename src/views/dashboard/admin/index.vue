@@ -514,7 +514,7 @@ export default {
         console.log(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]])
 
 
-        for(let i = 0; i < this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length; i++) {
+        for(let j = 0; j < this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length; j++) {
 
 
 
