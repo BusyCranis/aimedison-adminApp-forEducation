@@ -11,6 +11,10 @@
 
 
 
+
+    일별 대화 수 집계
+    <br>
+
     <select  v-model="startYear">
       <option   v-for="item in yearValue"   :value="item"> {{ item }} </option>  
     </select>년 
