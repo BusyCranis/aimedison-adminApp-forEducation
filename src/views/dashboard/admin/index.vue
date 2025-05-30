@@ -40,7 +40,7 @@
 
       <el-col>
         <div class="chart-wrapper">
-          <div id="barchartcomponent" :class="className" :style="{height:height,width:width}" />
+          <div id="chattokencountchart" :class="className" :style="{height:height,width:width}" />
         </div>
       </el-col>
 
@@ -508,6 +508,36 @@ export default {
 
 
     initTokenCountChart() {
+      console.log(this.dailyStatResponse.data)
+      const monthlyKeyNamesForAggr = Object.keys(this.dailyStatResponse.data)
+      const dailyValueArray = []
+
+      console.log(monthlyKeyNamesForAggr)
+
+      for (let i = 0; i < monthlyKeyNamesForAggr.length; i++) {
+        console.log(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]])
+
+        dailyValueArray.push(this.dailyStatResponse.data[monthlyKeyNamesForAggr[i]].length)
+      }
+
+     
+      this.tokenCountChart = echarts.init(document.getElementById('chattokencountchart'), 'macarons')
+
+      console.log(dailyValueArray)
+
+      // window["dailyChatKeyNamesForAggr"] = monthlyKeyNamesForAggr;
+
+      // window["aimedisonDailyChatValueDataArray"] = dailyValueArray;
+
+
+
+
+
+
+
+
+
+
 
     },    
 
