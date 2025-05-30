@@ -369,6 +369,7 @@ export default {
 
     },
 
+    
 
     async setAllPeriodChatChart() {
 
