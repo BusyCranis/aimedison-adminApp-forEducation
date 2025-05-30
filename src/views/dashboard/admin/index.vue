@@ -17,21 +17,21 @@
 
       일별 대화 수 집계 <br>
 
-      <select  v-model="startYear">
-        <option   v-for="item in yearValue"   :value="item"> {{ item }} </option>  
+      <select  v-model="startTCyear">
+        <option   v-for="item in yearTCvalue"   :value="item"> {{ item }} </option>  
       </select>년 
-      <select   v-model="startMonth" >
-        <option   v-for="item in monthValue"    :value="item"  > {{ item }} </option>
+      <select   v-model="startTCmonth" >
+        <option   v-for="item in monthTCvalue"    :value="item"  > {{ item }} </option>
       </select>월 
-      <input type="number"    v-model="startDay"   />일  ~  
+      <input type="number"    v-model="startTCday"   />일  ~  
 
-      <select   v-model="endYear"> 
-        <option   v-for="item in yearValue"   :value="item"> {{ item }} </option>  
+      <select   v-model="endTCyear"> 
+        <option   v-for="item in yearTCvalue"   :value="item"> {{ item }} </option>  
       </select>년 
-      <select   v-model="endMonth" >
-        <option   v-for="item in monthValue"    :value="item"  > {{ item }} </option>
+      <select   v-model="endTCmonth" >
+        <option   v-for="item in monthTCvalue"    :value="item"  > {{ item }} </option>
       </select>월 
-      <input type="number"    v-model="endDay"    />일        
+      <input type="number"    v-model="endTCday"    />일        
 
       <button   @click="searchChatTokenCountByDate" > 검색 </button>
       <button   @click="setChatTokenCountAllPeriod" > 전체기간 보기 </button>
