@@ -97,7 +97,7 @@
 
     <el-form      class="form-container">
       <div class="createPost-main-container">
-        <el-form-item>
+        <el-form-item       style="margin-bottom: 40px;" label-width="70px" label="Summary:">
           <el-input    type="textarea"    class="article-textarea">
           </el-input>
         </el-form-item>
@@ -867,6 +867,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "~@/styles/mixin.scss";
+
+
 .dashboard-editor-container {
   padding: 32px;
   background-color: rgb(240, 242, 245);
