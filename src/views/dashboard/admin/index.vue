@@ -98,7 +98,7 @@
     <el-form      class="form-container">
       <div class="createPost-main-container">
         <el-form-item       style="margin-bottom: 40px;" label-width="70px" label="Summary:">
-          <el-input     :rows="1"     type="textarea"    class="article-textarea">
+          <el-input   v-model="searchUserAccountName"   :rows="1"     type="textarea"    class="article-textarea">
           </el-input>
         </el-form-item>
       </div>
@@ -202,6 +202,10 @@ export default {
       endTCyear: 0,
       endTCmonth: 0,
       endTCday: 0,
+
+
+      searchUserAccountName: "",
+
 
 
     }
