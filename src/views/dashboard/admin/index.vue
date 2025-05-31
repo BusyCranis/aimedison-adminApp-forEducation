@@ -85,10 +85,10 @@
 
 
 
-      <el-form-item>
+      <!-- <el-form-item>
         <el-input    type="textarea"    class="article-textarea">
         </el-input>
-      </el-form-item>
+      </el-form-item> -->
 
 
 
@@ -96,13 +96,12 @@
 
 
 
-    <!-- <el-form-item>
-      <el-input    type="textarea"    class="article-textarea">
-      </el-input>
-    </el-form-item> -->
-
-
-
+    <div class="createPost-main-container">
+      <el-form-item>
+        <el-input    type="textarea"    class="article-textarea">
+        </el-input>
+      </el-form-item>
+    </div>
 
 
 
@@ -886,6 +885,12 @@ export default {
     padding: 16px 16px 0;
     margin-bottom: 32px;
   }
+}
+
+
+
+.createPost-main-container {
+  padding: 40px 45px 20px 50px; 
 }
 
 
