@@ -90,10 +90,7 @@
 
 
     <el-form-item>
-      <el-input    type="text">
-
-
-
+      <el-input    type="textarea"    class="article-textarea">
       </el-input>
     </el-form-item>
 
@@ -883,6 +880,20 @@ export default {
     margin-bottom: 32px;
   }
 }
+
+
+.article-textarea ::v-deep {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+
+
 
 @media (max-width:1024px) {
   .chart-wrapper {
