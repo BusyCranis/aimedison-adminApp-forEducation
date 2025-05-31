@@ -83,27 +83,26 @@
         </div>
       </el-col>
 
-
-
       <!-- <el-form-item>
         <el-input    type="textarea"    class="article-textarea">
         </el-input>
       </el-form-item> -->
 
-
-
     </el-row>
 
 
 
-    <div class="createPost-main-container">
-      <el-form-item>
-        <el-input    type="textarea"    class="article-textarea">
-        </el-input>
-      </el-form-item>
-    </div>
 
 
+
+    <el-form>
+      <div class="createPost-main-container">
+        <el-form-item>
+          <el-input    type="textarea"    class="article-textarea">
+          </el-input>
+        </el-form-item>
+      </div>
+    </el-form>
 
 
 
