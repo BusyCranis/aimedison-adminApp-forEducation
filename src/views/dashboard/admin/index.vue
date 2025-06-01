@@ -878,6 +878,11 @@ export default {
 
       window["aimedisonkeyworduserlist"] = userSearchResult.data;
 
+   
+
+      this.$store.commit("setAimedisonKeywordUserList", userSearchResult.data);
+
+
      
 
 
