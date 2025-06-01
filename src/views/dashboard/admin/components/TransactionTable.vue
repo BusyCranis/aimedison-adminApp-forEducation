@@ -42,7 +42,7 @@ export default {
     }
   },
   created() {
-    console.log(window["aimedisonkeyworduserlist"]);
+    // console.log(window["aimedisonkeyworduserlist"]);
 
     this.fetchData()
   },
