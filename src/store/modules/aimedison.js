@@ -24,7 +24,7 @@ const mutations = {
 //     state.sidebar.opened = false
 //     state.sidebar.withoutAnimation = withoutAnimation
 //   },
-  TOGGLE_DEVICE: (state, payload) => {
+  setAimedisonKeywordUserList: (state, payload) => {
     state.aimedisonKeywordUserList = payload
   },
 //   SET_SIZE: (state, size) => {
