@@ -112,7 +112,7 @@
 
 
     <el-row :gutter="8">
-      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 4}" :lg="{span: 4}" :xl="{span: 4}" style="padding-right:8px;margin-bottom:30px;">
+      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 6}" :lg="{span: 4}" :xl="{span: 4}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table />
       </el-col>
 
@@ -123,7 +123,7 @@
         <box-card />
       </el-col> -->
 
-      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
+      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 20}" :xl="{span: 20}" style="padding-right:8px;margin-bottom:30px;">
         <UserChatHistoryList />
       </el-col>
     </el-row>
