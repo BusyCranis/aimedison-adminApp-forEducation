@@ -12,17 +12,17 @@
     </el-table-column>
     <el-table-column label="Status" width="100" align="center">
 
-      <button    @click="findSuccessedChatHistory(scope.row.memberId)">
-        상세
-      </button>
+
+      <template slot-scope="{row}">
+        <button    @click="findSuccessedChatHistory(row.memberId)">
+          상세
+        </button>
       
 
-
-      <!-- <template slot-scope="{row}">
-        <el-tag :type="row.status | statusFilter">
+        <!-- <el-tag :type="row.status | statusFilter">
           {{ row.status }}
-        </el-tag>
-      </template> -->
+        </el-tag> -->
+      </template>
     </el-table-column>
   </el-table>
 </template>
@@ -58,7 +58,7 @@ export default {
     async findSuccessedChatHistory(userId) {
       console.log(userId)
 
-      
+
 
 
 
