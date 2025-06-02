@@ -1,6 +1,6 @@
 <template>
   <el-table :data="$store.state.aimedison.aimedisonKeywordUserList" style="width: 100%;padding-top: 15px;">
-    <el-table-column label="Order_No" min-width="200">
+    <el-table-column label="사용자 아이디" min-width="200">
       <!-- <template slot-scope="scope">
         {{ scope.row.order_no | orderNoFilter }}
       </template> -->
@@ -53,7 +53,7 @@ export default {
 
 
 
-      
+
       // transactionList().then(response => {
       //   this.list = response.data.items.slice(0, 8)
       //   console.log(response.data.items)
