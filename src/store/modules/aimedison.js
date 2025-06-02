@@ -6,6 +6,7 @@ const state = {
 //     withoutAnimation: false
 //   },
   aimedisonKeywordUserList: [],
+  
   recentScsdChatHistoryOfSlctdUser: [],
 
 
@@ -30,6 +31,10 @@ const mutations = {
   setAimedisonKeywordUserList: (state, payload) => {
     state.aimedisonKeywordUserList = payload
   },
+
+  setRecentScsdChatHistoryOfSlctdUser: (state, payload) => {
+    state.recentScsdChatHistoryOfSlctdUser = payload
+  }
 //   SET_SIZE: (state, size) => {
 //     state.size = size
 //     Cookies.set('size', size)
