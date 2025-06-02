@@ -59,7 +59,6 @@ export default {
     async findSuccessedChatHistory(userId) {
       console.log(userId)
       console.log(this.$store.state.aimedison.aimedisonKeywordUserList)
-
       let selectedUser = this.$store.state.aimedison.aimedisonKeywordUserList.filter((item) => item.memberId === userId)[0]
 
       // selectedUser.successHistoryList[selectedUser.successHistoryList.length - 1].trialIdForEvent
