@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import { transactionList } from '@/api/remote-search'
 
 export default {
