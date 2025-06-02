@@ -2,10 +2,21 @@
   <el-table :data="$store.state.aimedison.recentScsdChatHistoryOfSlctdUser" style="width: 100%; padding-top: 0px;">
     <el-table-column label="대화 내용" min-width="500">
       <template slot-scope="scope">
-        {{ scope.row.requestObjectByUserRequest | orderNoFilter }}
+        {{ scope.row.requestObjectByUserRequest | orderNoFilter }}   
+  
+          <br>
+
+        {{ scope.row.answerObjectDetail.content.content | orderNoFilter }}
+
       </template>
 
       <!-- .answerObjectDetail.content.content -->
+
+      <!-- <template slot-scope="scope">
+        {{ scope.row.answerObjectDetail.content.content | orderNoFilter }}
+      </template> -->
+
+
 
     </el-table-column>
 
