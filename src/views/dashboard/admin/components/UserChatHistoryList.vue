@@ -20,7 +20,7 @@
 
     </el-table-column>
 
-    <el-table-column label="Status" width="100" align="center">
+    <el-table-column label="" width="100" align="center">
 
 
       <!-- <template slot-scope="{row}">
