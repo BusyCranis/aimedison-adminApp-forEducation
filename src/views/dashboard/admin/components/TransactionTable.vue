@@ -77,6 +77,8 @@ export default {
       console.log(recentSuccessedChatHistory.data)
 
 
+      this.$store.commit("aimedison/setRecentScsdChatHistoryOfSlctdUser", recentSuccessedChatHistory.data);
+
 
 
 
