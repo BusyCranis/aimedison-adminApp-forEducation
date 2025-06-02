@@ -6,6 +6,9 @@ const state = {
 //     withoutAnimation: false
 //   },
   aimedisonKeywordUserList: [],
+  recentScsdChatHistoryOfSlctdUser: [],
+
+
 //   size: Cookies.get('size') || 'medium'
 }
 
