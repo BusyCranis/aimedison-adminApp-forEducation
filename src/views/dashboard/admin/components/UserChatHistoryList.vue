@@ -1,6 +1,6 @@
 <template>
   <el-table :data="$store.state.aimedison.recentScsdChatHistoryOfSlctdUser" style="width: 100%; padding-top: 0px;">
-    <el-table-column label="대화 내용" min-width="500"    style="text-overflow: clip;    word-break: normal;">
+    <el-table-column label="대화 내용" min-width="500"   >
       <template slot-scope="scope"   >
         사용자의 메시지: {{ scope.row.requestObjectByUserRequest }}   
   
