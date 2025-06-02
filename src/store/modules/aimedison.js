@@ -6,6 +6,8 @@ const state = {
 
   recentScsdChatHistoryOfSlctdUser: [],
 
+  currentSelectedUserId: "",
+
 
 }
 
@@ -17,6 +19,10 @@ const mutations = {
 
   setRecentScsdChatHistoryOfSlctdUser: (state, payload) => {
     state.recentScsdChatHistoryOfSlctdUser = payload
+  },
+
+  setCurrentSelectedUserId: (state, payload) => {
+    state.currentSelectedUserId = payload
   }
 
 }
