@@ -906,9 +906,11 @@ export default {
 
 
     async resetKeywordTrialCount() {
-
+      console.log(this.$store.state.aimedison.currentSelectedUserId)
 
       
+
+
     }
 
 
