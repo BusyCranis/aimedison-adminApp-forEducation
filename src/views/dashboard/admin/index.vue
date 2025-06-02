@@ -907,8 +907,24 @@ export default {
 
     async resetKeywordTrialCount() {
       console.log(this.$store.state.aimedison.currentSelectedUserId)
+      const resultAfterReset = await axios.post("http://175.119.224.227:5003/resetaftersuccess", {
+        shopId: "aimedison",
+        userId: this.$store.state.aimedison.currentSelectedUserId
+      });
+
+
+
+      console.log(resultAfterReset);
+      console.log(resultAfterReset.data);
+
 
       
+
+
+
+
+
+
 
 
     }
