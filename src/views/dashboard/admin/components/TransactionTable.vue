@@ -64,11 +64,19 @@ export default {
       // selectedUser.successHistoryList[selectedUser.successHistoryList.length - 1].trialIdForEvent
       // "http://175.119.224.227:5003/find/successedchathistory"
 
-      await axios.post("http://175.119.224.227:5003/find/successedchathistory", {
+      let recentSuccessedChatHistory = await axios.post("http://175.119.224.227:5003/find/successedchathistory", {
         shopId: "aimedison",
         userId: userId,
         trialId: selectedUser.successHistoryList[selectedUser.successHistoryList.length - 1].trialIdForEvent
       })
+
+
+      
+      console.log(recentSuccessedChatHistory)
+      console.log(recentSuccessedChatHistory.data)
+
+
+
 
 
 
