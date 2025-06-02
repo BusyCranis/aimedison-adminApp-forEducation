@@ -102,6 +102,8 @@
           </el-input>
 
           <button     type="button"    @click="submitUserAccountNameSearch"> 검색 </button>
+          <button   type="button"    style="min-width: 600px;     visibility: hidden;" >  a  </button>
+          <button     type="button"    @click="submitUserAccountNameSearch"> 검색 </button>
         </el-form-item>
       </div>
     </el-form>
