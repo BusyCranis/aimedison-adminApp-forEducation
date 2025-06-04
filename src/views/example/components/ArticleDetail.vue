@@ -82,7 +82,7 @@
 
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="챗봇 제목:">
-          <el-input v-model="postForm.chatbotTitle" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <el-input v-model="postForm.uiConfigOption.shopAppTitle" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
