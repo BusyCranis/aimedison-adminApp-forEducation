@@ -63,6 +63,29 @@
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 
+        <el-form-item style="margin-bottom: 40px;" label-width="70px" label="이벤트 문장:">
+          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
+        </el-form-item>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <el-form-item style="margin-bottom: 40px;" label-width="70px" label="챗봇 제목:">
+          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
+        </el-form-item>
+
         <!-- <el-form-item prop="content" style="margin-bottom: 30px;">
           <Tinymce ref="editor" v-model="postForm.content" :height="400" />
         </el-form-item> -->
