@@ -92,6 +92,23 @@
           <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
+
+
+        
+        챗봇 색상
+
+        헤더  <input  type="color"  >
+
+        본문  <input  type="color"  >
+
+        메시지 입력창  <input  type="color"  >
+
+        사용자 메시지  <input  type="color"  >
+
+        챗봇 메시지  <input  type="color"  >
+
+
+
         <!-- <el-form-item prop="content" style="margin-bottom: 30px;">
           <Tinymce ref="editor" v-model="postForm.content" :height="400" />
         </el-form-item> -->
