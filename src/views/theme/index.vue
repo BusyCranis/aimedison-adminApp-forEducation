@@ -118,7 +118,15 @@ export default {
         { name: 'Tag Five', type: 'danger' }
       ],
       slideValue: 50,
-      radio: 3
+      radio: 3,
+
+
+      
+
+
+
+
+
     }
   },
   watch: {
