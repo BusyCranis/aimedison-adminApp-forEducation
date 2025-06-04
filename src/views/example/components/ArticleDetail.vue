@@ -335,6 +335,13 @@ export default {
 
 
     async submitChangedAppSettings() {
+
+
+
+
+
+
+      
       const keywordAppUiConfigOption = {
         shopAppTitle: this.postForm.uiConfigOption.shopAppTitle,
         shopAppColors: {
@@ -345,8 +352,6 @@ export default {
           answerMessageBoxColor: this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor
         }
       }
-
-
 
 
       const keywordAppUseFor = {
@@ -366,7 +371,7 @@ export default {
         shopId: "aimedison",
         greeting: this.postForm.greeting,
         appUseFor: keywordAppUseFor,
-        uiConfigOption: {}
+        uiConfigOption: keywordAppUiConfigOption
       })
 
 
