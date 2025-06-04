@@ -337,7 +337,7 @@ export default {
     async submitChangedAppSettings() {
       const keywordAppUseFor = {
         appUseFor: "appforeventspec",
-        // appEventKeywordList: [],
+        appEventKeywordList: this.postForm.appUseFor.appEventKeywordList,
         remainedTrialCount: this.postForm.appUseFor.remainedTrialCount,
         totalChanceKeywordChallenge: this.postForm.appUseFor.totalChanceKeywordChallenge
 
@@ -352,7 +352,7 @@ export default {
       await axios.post("http://175.119.224.227:7337/app/changeeachshopconfig", {
         shopId: "aimedison",
         greeting: this.postForm.greeting,
-        appUseFor: {},
+        appUseFor: keywordAppUseFor,
         uiConfigOption: {}
       })
 
