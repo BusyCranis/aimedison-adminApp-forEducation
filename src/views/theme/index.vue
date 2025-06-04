@@ -120,8 +120,9 @@ export default {
       slideValue: 50,
       radio: 3,
 
+      isAppInstalledFromServer: true,
+      isAppDisplayingFromServer: true,
 
-      
 
 
 
@@ -156,9 +157,11 @@ export default {
 
 
 
+
       console.log(resFromKeywordAppServer);
       console.log(resFromKeywordAppServer.data);
-      // this.postForm = resFromKeywordAppServer.data;
+      this.isAppInstalledFromServer = resFromKeywordAppServer.data.isAppInstalled;
+      this.isAppDisplayingFromServer = resFromKeywordAppServer.data.isAppDisplaying;
 
 
     },
