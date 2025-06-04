@@ -63,13 +63,13 @@
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 
-        <el-form-item prop="content" style="margin-bottom: 30px;">
+        <!-- <el-form-item prop="content" style="margin-bottom: 30px;">
           <Tinymce ref="editor" v-model="postForm.content" :height="400" />
-        </el-form-item>
+        </el-form-item> -->
 
-        <el-form-item prop="image_uri" style="margin-bottom: 30px;">
+        <!-- <el-form-item prop="image_uri" style="margin-bottom: 30px;">
           <Upload v-model="postForm.image_uri" />
-        </el-form-item>
+        </el-form-item> -->
       </div>
     </el-form>
   </div>
