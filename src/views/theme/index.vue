@@ -16,16 +16,14 @@
           Success
         </el-button> -->
 
-        <el-button type="primary">
+        <el-button type="primary"      v-if="isAppInstalledFromServer === false">
           설치
         </el-button>
-
-        <el-button type="primary">
-          설치 해제
-        </el-button>
-
-        <el-button type="primary">
+        <el-button type="primary"      v-else-if="isAppInstalledFromServer === true && isAppDisplayingFromServer === false">
           재설치
+        </el-button>
+        <el-button type="primary"       v-else-if="isAppDisplayingFromServer === true">
+          설치 해제
         </el-button>
 
 
