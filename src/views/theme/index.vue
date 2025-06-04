@@ -129,8 +129,8 @@ export default {
 
 
 
-  mounted() {
-
+  async mounted() {
+    await this.bringKeywordAppInstallStatus()
 
 
 
@@ -139,6 +139,12 @@ export default {
 
 
   methods: {
+
+    bringKeywordAppInstallStatus() {
+
+
+
+    },
 
 
 
