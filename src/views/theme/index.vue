@@ -17,15 +17,15 @@
         </el-button> -->
 
         <el-button type="warning">
-          Warning
+          설치
         </el-button>
 
         <el-button type="warning">
-          Warning
+          설치 해제
         </el-button>
 
         <el-button type="warning">
-          Warning
+          재설치
         </el-button>
 
 
