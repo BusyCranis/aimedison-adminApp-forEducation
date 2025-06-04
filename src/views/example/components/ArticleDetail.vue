@@ -328,7 +328,11 @@ export default {
     async submitChangedAppSettings() {
 
       const keywordAppUseFor = {
-        
+        appUseFor: "appforeventspec",
+        // appEventKeywordList: [],
+        remainedTrialCount: this.postForm.appUseFor.remainedTrialCount,
+        totalChanceKeywordChallenge: this.postForm.appUseFor.totalChanceKeywordChallenge
+
       }
 
 
