@@ -20,6 +20,14 @@
           Warning
         </el-button>
 
+        <el-button type="warning">
+          Warning
+        </el-button>
+
+        <el-button type="warning">
+          Warning
+        </el-button>
+
 
         <!-- <el-switch v-model="theme" /> -->
         <aside style="margin-top:15px;">
