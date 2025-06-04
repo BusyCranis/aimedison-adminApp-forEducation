@@ -93,7 +93,8 @@ export default {
 
     
     async findAllChatHistory() {
-      
+      // /find/allchathistory
+
 
 
     },
