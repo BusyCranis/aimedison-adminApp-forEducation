@@ -76,11 +76,11 @@
 
 
 
-        <input type="number"    v-model="postForm.appUseFor.totalChanceKeywordChallenge"   />
+        최대 도전 횟수:   <input type="number"    v-model="postForm.appUseFor.totalChanceKeywordChallenge"   />
 
         <br>
 
-        <input type="number"    v-model="postForm.appUseFor.remainedTrialCount"   />
+        도전별 대화 갯수:   <input type="number"    v-model="postForm.appUseFor.remainedTrialCount"   />
 
 
 
