@@ -389,10 +389,10 @@ export default {
         shopAppTitle: this.postForm.uiConfigOption.shopAppTitle,
         shopAppColors: {
           headerColor: `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`,
-          mainSpaceColor: this.postForm.uiConfigOption.shopAppColors.mainSpaceColor,
-          inputBoxColor: this.postForm.uiConfigOption.shopAppColors.inputBoxColor,
-          userMessageBoxColor: this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor,
-          answerMessageBoxColor: this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor
+          mainSpaceColor: `rgb(${alwefweRedFactor}, ${alwefweGreenFactor}, ${alwefweBlueFactor})`,
+          inputBoxColor: `rgb(${wefwefewfwefRedFactor}, ${wefwefewfwefGreenFactor}, ${wefwefewfwefBlueFactor})`,
+          userMessageBoxColor: `rgb(${mklmklmklmkRedFactor}, ${mklmklmklmkGreenFactor}, ${mklmklmklmkBlueFactor})`,
+          answerMessageBoxColor: `rgb(${aqaqaqaqwaqaqaRedFactor}, ${aqaqaqaqwaqaqaGreenFactor}, ${aqaqaqaqwaqaqaBlueFactor})`
         }
       }
 
