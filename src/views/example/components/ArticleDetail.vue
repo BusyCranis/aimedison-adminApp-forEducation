@@ -97,15 +97,15 @@
 
         챗봇 색상
 
-        헤더  <input  type="color"  >
+        헤더  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.headerColor"   >
 
-        본문  <input  type="color"  >
+        본문  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.mainSpaceColor" >
 
-        메시지 입력창  <input  type="color"  >
+        메시지 입력창  <input  type="color"    v-model="postForm.uiConfigOption.shopAppColors.inputBoxColor" >
 
-        사용자 메시지  <input  type="color"  >
+        사용자 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.userMessageBoxColor"    >
 
-        챗봇 메시지  <input  type="color"  >
+        챗봇 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.answerMessageBoxColor"    >
 
 
 
