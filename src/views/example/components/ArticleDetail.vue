@@ -78,6 +78,8 @@
 
         <input type="number"    v-model="postForm.appUseFor.totalChanceKeywordChallenge"   />
 
+        <br>
+
         <input type="number"    v-model="postForm.appUseFor.remainedTrialCount"   />
 
 
