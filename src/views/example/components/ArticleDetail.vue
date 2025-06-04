@@ -111,7 +111,6 @@ import Warning from './Warning'
 import { CommentDropdown, PlatformDropdown, SourceUrlDropdown } from './Dropdown'
 
 const defaultForm = {
-  greeting: "",
   targetKeyword: "",
   chatbotTitle: "",
 
