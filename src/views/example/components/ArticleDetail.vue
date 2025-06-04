@@ -344,6 +344,42 @@ export default {
       // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
 
 
+      let hexadecimalwefweCode = this.postForm.uiConfigOption.shopAppColors.mainSpaceColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.mainSpaceColor);
+    
+      let alwefweRedFactor = parseInt(hexadecimalwefweCode.slice(1, 3), 16);
+      let alwefweGreenFactor = parseInt(hexadecimalwefweCode.slice(3, 5), 16);
+      let alwefweBlueFactor = parseInt(hexadecimalwefweCode.slice(5, 7), 16);
+      // chatbotalwefweColor = `rgb(${alwefweRedFactor}, ${alwefweGreenFactor}, ${alwefweBlueFactor})`;
+
+
+      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.inputBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+    
+      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
+      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
+      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+
+
+      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+    
+      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
+      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
+      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+
+
+      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+    
+      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
+      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
+      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+
+
 
 
 
