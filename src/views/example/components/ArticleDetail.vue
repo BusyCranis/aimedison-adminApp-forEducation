@@ -209,7 +209,29 @@ export default {
     // https://github.com/PanJiaChen/vue-element-admin/issues/1221
     this.tempRoute = Object.assign({}, this.$route)
   },
+
+  async mounted() {
+
+    await this.getKeywordAppInfo()
+
+  },
+
+
+
+
   methods: {
+    // await axios.post("http://175.119.224.227:7337/app/checkshopexist", {})
+
+    async getKeywordAppInfo() {
+      console.log("getKeywordAppInfo...");
+
+
+      // await axios.post("http://175.119.224.227:7337/app/checkshopexist", {})
+
+    },
+
+
+
     fetchData(id) {
       fetchArticle(id).then(response => {
         this.postForm = response.data
