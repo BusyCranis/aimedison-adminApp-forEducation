@@ -14,8 +14,16 @@
 
 
       <template slot-scope="{row}">
+
+        <button    @click="(row.memberId)">
+          전체 조회
+        </button>
+
+
+
+
         <button    @click="findSuccessedChatHistory(row.memberId)">
-          상세
+          성공한 기록만 조회
         </button>
       
 
