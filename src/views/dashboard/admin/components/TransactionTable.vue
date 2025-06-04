@@ -62,14 +62,14 @@ export default {
       let selectedUser = this.$store.state.aimedison.aimedisonKeywordUserList.filter((item) => item.memberId === userId)[0]
 
       // selectedUser.successHistoryList[selectedUser.successHistoryList.length - 1].trialIdForEvent
-      // "http://175.119.224.227:5003/find/successedchathistory"
+      // "/find/successedchathistory"
 
       this.$store.commit("aimedison/setCurrentSelectedUserId", userId);
 
       console.log(selectedUser)
 
-      let recentSuccessedChatHistory = await axios.post("http://175.119.224.227:5003/find/successedchathistory", {
-        shopId: "aimedison",
+      let recentSuccessedChatHistory = await axios.post("/find/successedchathistory", {
+        shopId: window.cafe24aimedisonkeywordappshopid,
         userId: userId,
         trialId: selectedUser.successHistoryList[selectedUser.successHistoryList.length - 1].trialIdForEvent
       })

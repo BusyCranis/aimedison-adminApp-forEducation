@@ -282,12 +282,12 @@ export default {
 
 
   methods: {
-    // await axios.post("http://175.119.224.227:7337/app/checkshopexist", {})
+    // await axios.post("/app/checkshopexist", {})
 
     async getKeywordAppInfo() {
       console.log("getKeywordAppInfo...");
-      let resFromKeywordAppServer = await axios.post("http://175.119.224.227:7337/app/checkshopexist", {
-        shopId: "aimedison"
+      let resFromKeywordAppServer = await axios.post("/app/checkshopexist", {
+        shopId: window.cafe24aimedisonkeywordappshopid
       })
 
 
@@ -410,8 +410,8 @@ export default {
 
 
 
-      await axios.post("http://175.119.224.227:7337/app/changeeachshopconfig", {
-        shopId: "aimedison",
+      await axios.post("/app/changeeachshopconfig", {
+        shopId: window.cafe24aimedisonkeywordappshopid,
         greeting: this.postForm.greeting,
         appUseFor: keywordAppUseFor,
         uiConfigOption: keywordAppUiConfigOption

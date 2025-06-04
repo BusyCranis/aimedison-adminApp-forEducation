@@ -149,8 +149,8 @@ export default {
   methods: {
 
     async bringKeywordAppInstallStatus() {
-      let resFromKeywordAppServer = await axios.post("http://175.119.224.227:7337/app/checkshopexist", {
-        shopId: "aimedison"
+      let resFromKeywordAppServer = await axios.post("/app/checkshopexist", {
+        shopId: window.cafe24aimedisonkeywordappshopid
       })
 
 
@@ -172,8 +172,8 @@ export default {
         // console.log(document.getElementById("newlyinstallaimedisonappbutton"));
         // document.getElementById("newlyinstallaimedisonappbutton").remove();
       
-        let responseFromAppScript = await axios.post("http://175.119.224.227:7337/app/insertscript", {
-          urlSearchKey: "aimedison"
+        let responseFromAppScript = await axios.post("/app/insertscript", {
+          urlSearchKey: window.cafe24aimedisonkeywordappshopid
         });
        
 
@@ -191,8 +191,8 @@ export default {
         // console.log(keyForSaveAuthTokenInLocal);
         // document.getElementById("checkdeacteappservice").remove();
 
-        let resultFromDeact = await axios.post("http://175.119.224.227:7337/app/deactivate", {
-          shopId: "aimedison"
+        let resultFromDeact = await axios.post("/app/deactivate", {
+          shopId: window.cafe24aimedisonkeywordappshopid
         });
        
 
@@ -207,8 +207,8 @@ export default {
         // console.log(keyForSaveAuthTokenInLocal);
         // document.getElementById("checkreinstallappserver").remove();
 
-        let resultFromDeact = await axios.post("http://175.119.224.227:7337/app/reinstallapp", {
-          shopId: "aimedison"
+        let resultFromDeact = await axios.post("/app/reinstallapp", {
+          shopId: window.cafe24aimedisonkeywordappshopid
         });
         
 

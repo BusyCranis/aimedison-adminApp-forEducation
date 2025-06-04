@@ -241,11 +241,13 @@ export default {
 
   async mounted() {
     // this.yearValue = [2024, 2025]
+    // window["cafe24aimedisonkeywordappshopid"]
+    // window.cafe24aimedisonkeywordappshopid
 
     console.log(this.startYear)
 
-    this.dailyStatResponse = await axios.post('http://175.119.224.227:5003/admin/daily/chatcount', {
-      shopId: 'aimedison'
+    this.dailyStatResponse = await axios.post('/admin/daily/chatcount', {
+      shopId: window.cafe24aimedisonkeywordappshopid
     })
 
 
@@ -377,8 +379,8 @@ export default {
 
         return
       } else {
-        let searchResult = await axios.post("http://175.119.224.227:5003/admin/search/daily/chatcount", {
-          shopId: 'aimedison',
+        let searchResult = await axios.post("/admin/search/daily/chatcount", {
+          shopId: window.cafe24aimedisonkeywordappshopid,
           dailyChatStatResponse: this.dailyStatResponse.data,
           startYear: this.startYear,
           startMonth: this.startMonth,
@@ -671,8 +673,8 @@ export default {
 
         return
       } else {
-        let searchResult = await axios.post("http://175.119.224.227:5003/admin/search/daily/chatcount", {
-          shopId: 'aimedison',
+        let searchResult = await axios.post("/admin/search/daily/chatcount", {
+          shopId: window.cafe24aimedisonkeywordappshopid,
           dailyChatStatResponse: this.dailyStatResponse.data,
           startYear: this.startTCyear,
           startMonth: this.startTCmonth,
@@ -880,8 +882,8 @@ export default {
 
     async submitUserAccountNameSearch() {
       console.log(this.searchUserAccountName)
-      let userSearchResult = await axios.post("http://175.119.224.227:5003/keywordapp/admin/search/user", {
-        shopId: "aimedison",
+      let userSearchResult = await axios.post("/keywordapp/admin/search/user", {
+        shopId: window.cafe24aimedisonkeywordappshopid,
         searchUserAccountName: this.searchUserAccountName
       })
 
@@ -907,8 +909,8 @@ export default {
 
     async resetKeywordTrialCount() {
       console.log(this.$store.state.aimedison.currentSelectedUserId)
-      const resultAfterReset = await axios.post("http://175.119.224.227:5003/resetaftersuccess", {
-        shopId: "aimedison",
+      const resultAfterReset = await axios.post("/resetaftersuccess", {
+        shopId: window.cafe24aimedisonkeywordappshopid,
         userId: this.$store.state.aimedison.currentSelectedUserId
       });
 
