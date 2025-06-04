@@ -353,31 +353,31 @@ export default {
       // chatbotalwefweColor = `rgb(${alwefweRedFactor}, ${alwefweGreenFactor}, ${alwefweBlueFactor})`;
 
 
-      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.inputBoxColor;
-      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+      let wefwefewfwef = this.postForm.uiConfigOption.shopAppColors.inputBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.inputBoxColor);
     
-      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
-      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
-      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
-      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+      let wefwefewfwefRedFactor = parseInt(wefwefewfwef.slice(1, 3), 16);
+      let wefwefewfwefGreenFactor = parseInt(wefwefewfwef.slice(3, 5), 16);
+      let wefwefewfwefBlueFactor = parseInt(wefwefewfwef.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${wefwefewfwefRedFactor}, ${wefwefewfwefGreenFactor}, ${wefwefewfwefBlueFactor})`;
 
 
-      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor;
-      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+      let mklmklmklmk = this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor);
     
-      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
-      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
-      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
-      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+      let mklmklmklmkRedFactor = parseInt(mklmklmklmk.slice(1, 3), 16);
+      let mklmklmklmkGreenFactor = parseInt(mklmklmklmk.slice(3, 5), 16);
+      let mklmklmklmkBlueFactor = parseInt(mklmklmklmk.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${mklmklmklmkRedFactor}, ${mklmklmklmkGreenFactor}, ${mklmklmklmkBlueFactor})`;
 
 
-      let hexadecimalHeaderCode = this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor;
-      console.log(this.postForm.uiConfigOption.shopAppColors.headerColor);
+      let aqaqaqaqwaqaqa = this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor;
+      console.log(this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor);
     
-      let headerRedFactor = parseInt(hexadecimalHeaderCode.slice(1, 3), 16);
-      let headerGreenFactor = parseInt(hexadecimalHeaderCode.slice(3, 5), 16);
-      let headerBlueFactor = parseInt(hexadecimalHeaderCode.slice(5, 7), 16);
-      // chatbotHeaderColor = `rgb(${headerRedFactor}, ${headerGreenFactor}, ${headerBlueFactor})`;
+      let aqaqaqaqwaqaqaRedFactor = parseInt(aqaqaqaqwaqaqa.slice(1, 3), 16);
+      let aqaqaqaqwaqaqaGreenFactor = parseInt(aqaqaqaqwaqaqa.slice(3, 5), 16);
+      let aqaqaqaqwaqaqaBlueFactor = parseInt(aqaqaqaqwaqaqa.slice(5, 7), 16);
+      // chatbotHeaderColor = `rgb(${aqaqaqaqwaqaqaRedFactor}, ${aqaqaqaqwaqaqaGreenFactor}, ${aqaqaqaqwaqaqaBlueFactor})`;
 
 
 
