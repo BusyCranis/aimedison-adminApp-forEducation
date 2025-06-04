@@ -287,6 +287,10 @@ export default {
       // this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor)
 
       this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor);
+      this.postForm.uiConfigOption.shopAppColors.headerColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.headerColor);
+      this.postForm.uiConfigOption.shopAppColors.inputBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.inputBoxColor);
+      this.postForm.uiConfigOption.shopAppColors.mainSpaceColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.mainSpaceColor);
+      this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.userMessageBoxColor);
 
 
 
