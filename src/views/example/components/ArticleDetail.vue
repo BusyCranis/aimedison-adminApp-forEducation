@@ -59,12 +59,12 @@
         </el-row> -->
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="인사말:">
-          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <el-input v-model="postForm.greeting" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="이벤트 문장:">
-          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <el-input v-model="postForm.targetKeyword" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 
@@ -79,10 +79,10 @@
 
 
 
-        
+
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="챗봇 제목:">
-          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <el-input v-model="postForm.chatbotTitle" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 
@@ -110,17 +110,26 @@ import Warning from './Warning'
 import { CommentDropdown, PlatformDropdown, SourceUrlDropdown } from './Dropdown'
 
 const defaultForm = {
-  status: 'draft',
-  title: '', // 文章题目
-  content: '', // 文章内容
-  content_short: '', // 文章摘要
-  source_uri: '', // 文章外链
-  image_uri: '', // 文章图片
-  display_time: undefined, // 前台展示时间
-  id: undefined,
-  platforms: ['a-platform'],
-  comment_disabled: false,
-  importance: 0
+
+  greeting: "",
+
+  targetKeyword: "",
+
+  chatbotTitle: "",
+
+
+
+  // status: 'draft',
+  // title: '', // 文章题目
+  // content: '', // 文章内容
+  // content_short: '', // 文章摘要
+  // source_uri: '', // 文章外链
+  // image_uri: '', // 文章图片
+  // display_time: undefined, // 前台展示时间
+  // id: undefined,
+  // platforms: ['a-platform'],
+  // comment_disabled: false,
+  // importance: 0
 }
 
 export default {
