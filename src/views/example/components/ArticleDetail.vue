@@ -60,12 +60,12 @@
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="인사말:">
           <el-input v-model="postForm.greeting" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
-          <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
+          <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="이벤트 문장:">
           <el-input v-model="postForm.targetKeyword" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
-          <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
+          <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
 
@@ -83,7 +83,7 @@
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="챗봇 제목:">
           <el-input v-model="postForm.chatbotTitle" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
-          <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
+          <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
         <!-- <el-form-item prop="content" style="margin-bottom: 30px;">
