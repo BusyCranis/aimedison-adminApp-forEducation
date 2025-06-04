@@ -224,9 +224,22 @@ export default {
 
     async getKeywordAppInfo() {
       console.log("getKeywordAppInfo...");
+      let resFromKeywordAppServer = await axios.post("http://175.119.224.227:7337/app/checkshopexist", {
+        shopId: "aimedison"
+      })
 
 
-      // await axios.post("http://175.119.224.227:7337/app/checkshopexist", {})
+      console.log(resFromKeywordAppServer);
+
+
+
+
+
+
+
+
+
+
 
     },
 
