@@ -168,6 +168,48 @@ export default {
 
     },
 
+    async requestInsertScriptInService() {
+        // console.log(document.getElementById("newlyinstallaimedisonappbutton"));
+        // document.getElementById("newlyinstallaimedisonappbutton").remove();
+      
+        let responseFromAppScript = await axios.post("http://175.119.224.227:7337/app/insertscript", {
+          urlSearchKey: "aimedison"
+        });
+       
+
+
+        
+        // console.log(responseFromAppScript);
+        console.log(responseFromAppScript.data);
+      },
+
+
+      async deactivateAppService() {
+        // console.log(keyForSaveAuthTokenInLocal);
+        // document.getElementById("checkdeacteappservice").remove();
+
+        let resultFromDeact = await axios.post("http://175.119.224.227:7337/app/deactivate", {
+          shopId: "aimedison"
+        });
+       
+
+
+        console.log(resultFromDeact);
+      },
+
+      async SetReInstallAppService() {
+        // console.log(keyForSaveAuthTokenInLocal);
+        // document.getElementById("checkreinstallappserver").remove();
+
+        let resultFromDeact = await axios.post("http://175.119.224.227:7337/app/reinstallapp", {
+          shopId: "aimedison"
+        });
+        
+
+        
+        console.log(resultFromDeact);
+      },
+
 
 
 
