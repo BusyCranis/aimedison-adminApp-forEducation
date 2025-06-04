@@ -326,18 +326,23 @@ export default {
 
 
     async submitChangedAppSettings() {
+
+
+
+      
+
+
+
+
       await axios.post("http://175.119.224.227:7337/app/changeeachshopconfig", {
         shopId: "aimedison",
-        greeting: ,
-        appUseFor: ,
-        uiConfigOption: 
+        greeting: this.postForm.greeting,
+        appUseFor: {},
+        uiConfigOption: {}
       })
 
 
-      // shopId: keyForSaveAuthTokenInLocal,
-      // greeting: textgreetingsinput,
-      // appUseFor: appUseFor,
-      // uiConfigOption: uiConfigOption
+    
 
 
 
