@@ -94,7 +94,7 @@
 
 
 
-        
+
         챗봇 색상
 
         헤더  <input  type="color"  >
@@ -278,6 +278,18 @@ export default {
 
 
 
+    },
+
+
+    convertRgbToHex(rgbString) {
+      const rgb = rgbString.match(/\d+/g).map(Number);
+
+      // 각각 r, g, b를 16진수 2자리 문자열로 변환
+      const hex = rgb.map(value =>
+        value.toString(16).padStart(2, '0')
+      ).join('');
+
+      return `#${hex}`;
     },
 
 
