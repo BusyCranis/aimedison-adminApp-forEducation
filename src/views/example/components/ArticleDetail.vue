@@ -117,6 +117,19 @@
           <Upload v-model="postForm.image_uri" />
         </el-form-item> -->
       </div>
+
+
+
+      
+
+
+
+      <el-button    type="button"     style="margin-left: 10px;"  @click="">
+        Publish
+      </el-button>
+
+
+
     </el-form>
   </div>
 </template>
