@@ -15,7 +15,7 @@
       </sticky>
 
       <div class="createPost-main-container">
-        <el-row>
+        <!-- <el-row>
           <Warning />
 
           <el-col :span="24">
@@ -56,7 +56,7 @@
               </el-row>
             </div>
           </el-col>
-        </el-row>
+        </el-row> -->
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="Summary:">
           <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
