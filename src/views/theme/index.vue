@@ -3,12 +3,12 @@
     <el-card class="box-card">
       <div slot="header">
         <a class="link-type link-title" target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/theme.html">
-          Theme documentation
+          앱 설치 관리
         </a>
       </div>
       <div class="box-item">
         <span class="field-label">Change Theme : </span>
-        
+
 
         <!-- <el-switch v-model="theme" /> -->
         <aside style="margin-top:15px;">
