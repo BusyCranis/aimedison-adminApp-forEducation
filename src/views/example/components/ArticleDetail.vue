@@ -124,7 +124,7 @@
 
 
 
-      <el-button    type="button"     style="margin-left: 10px;"  @click="">
+      <el-button    type="button"     style="margin-left: 10px;"  @click="submitChangedAppSettings">
         변경사항 적용
       </el-button>
 
@@ -322,6 +322,22 @@ export default {
       ).join('');
 
       return `#${hex}`;
+    },
+
+
+    async submitChangedAppSettings() {
+      // await axios.post("http://175.119.224.227:7337/app/changeeachshopconfig", {})
+
+
+
+      
+
+
+
+
+
+
+
     },
 
 
