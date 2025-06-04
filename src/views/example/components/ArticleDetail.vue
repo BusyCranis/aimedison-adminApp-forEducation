@@ -64,7 +64,7 @@
         </el-form-item>
 
         <el-form-item style="margin-bottom: 40px;" label-width="70px" label="이벤트 문장:">
-          <el-input v-model="postForm.targetKeyword" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+          <el-input v-model="targetKeyword" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
@@ -111,7 +111,7 @@ import Warning from './Warning'
 import { CommentDropdown, PlatformDropdown, SourceUrlDropdown } from './Dropdown'
 
 const defaultForm = {
-  targetKeyword: "",
+  // targetKeyword: "",
   chatbotTitle: "",
 
 
@@ -185,6 +185,7 @@ export default {
       }
     }
     return {
+      targetKeyword: "",
       postForm: Object.assign({}, defaultForm),
       loading: false,
       userListOptions: [],
