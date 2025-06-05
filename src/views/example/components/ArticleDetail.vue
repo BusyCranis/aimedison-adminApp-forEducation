@@ -426,14 +426,12 @@ export default {
       //   value: this.targetKeyword,
       //   keywordId: "eventkeyword" + Date.now()
       // })
-
-
-
-
       // console.log(this.postForm.appUseFor.appEventKeywordList)
 
-
       this.$store.commit("aimedison/addKeywordShopAimedison", eachId);
+
+
+
 
     },
 
