@@ -15,16 +15,16 @@
 
       <template slot-scope="{row}">
 
-        <button   type="button"   @click="findAllChatHistory(row.memberId)">
+        <el-button    type="button"    @click="findAllChatHistory(row.memberId)"      style="background-color: skyblue;    color: black;    padding: 5px;">
           전체 조회
-        </button>
+        </el-button>
 
 
 
 
-        <button  type="button"       @click="findSuccessedChatHistory(row.memberId)">
+        <el-button    type="button"    @click="findSuccessedChatHistory(row.memberId)"     style="background-color: skyblue;    color: black;    padding: 5px;">
           성공한 기록만 조회
-        </button>
+        </el-button>
       
 
         <!-- <el-tag :type="row.status | statusFilter">
