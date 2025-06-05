@@ -299,16 +299,9 @@ export default {
       console.log(resFromKeywordAppServer.data);
       this.postForm = resFromKeywordAppServer.data;
 
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor
-      // headerColor   inputBoxColor     mainSpaceColor     userMessageBoxColor
 
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.headerColor
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.inputBoxColor
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.mainSpaceColor
-      // resFromKeywordAppServer.data.uiConfigOption.shopAppColors.userMessageBoxColor
-
-      // this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor)
+      this.$store.commit("aimedison/", resFromKeywordAppServer.data.appUseFor.appEventKeywordList);
+     
 
       this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor);
       this.postForm.uiConfigOption.shopAppColors.headerColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.headerColor);

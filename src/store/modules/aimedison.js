@@ -8,6 +8,8 @@ const state = {
 
   currentSelectedUserId: "",
 
+  keywordShopAimedison: [],
+
 
 }
 
