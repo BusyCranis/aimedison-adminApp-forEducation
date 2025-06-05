@@ -300,7 +300,7 @@ export default {
       this.postForm = resFromKeywordAppServer.data;
 
 
-      this.$store.commit("aimedison/", resFromKeywordAppServer.data.appUseFor.appEventKeywordList);
+      this.$store.commit("aimedison/setKeywordShopAimedison", resFromKeywordAppServer.data.appUseFor.appEventKeywordList);
      
 
       this.postForm.uiConfigOption.shopAppColors.answerMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.answerMessageBoxColor);
@@ -308,10 +308,6 @@ export default {
       this.postForm.uiConfigOption.shopAppColors.inputBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.inputBoxColor);
       this.postForm.uiConfigOption.shopAppColors.mainSpaceColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.mainSpaceColor);
       this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.userMessageBoxColor);
-
-
-
-
 
 
     },
