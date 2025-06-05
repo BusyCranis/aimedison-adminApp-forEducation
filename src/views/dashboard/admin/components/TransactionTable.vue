@@ -15,14 +15,14 @@
 
       <template slot-scope="{row}">
 
-        <button    @click="findAllChatHistory(row.memberId)">
+        <button   type="button"   @click="findAllChatHistory(row.memberId)">
           전체 조회
         </button>
 
 
 
 
-        <button    @click="findSuccessedChatHistory(row.memberId)">
+        <button  type="button"       @click="findSuccessedChatHistory(row.memberId)">
           성공한 기록만 조회
         </button>
       
