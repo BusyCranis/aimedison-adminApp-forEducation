@@ -1,5 +1,5 @@
 <template>
-  <el-table :data="$store.state.aimedison.aimedisonKeywordUserList" style="width: 100%; padding-top: 0px;">
+  <el-table :data="$store.state.aimedison.keywordShopAimedison" style="width: 100%; padding-top: 0px;">
     <el-table-column label="사용자 아이디" min-width="100">
       <template slot-scope="scope">
         {{ scope.row.memberId | orderNoFilter }}
