@@ -101,9 +101,9 @@
           <el-input   v-model="searchUserAccountName"   :rows="1"     type="textarea"    style="max-width: 100px;"    class="article-textarea">
           </el-input>
 
-          <button   type="button"    style="min-width: 5px;     visibility: hidden;" >  a  </button>
+          <button   type="button"    style="min-width: 1px;     visibility: hidden;" >  a  </button>
 
-          <button     type="button"    @click="submitUserAccountNameSearch"> 검색 </button>
+          <el-button     type="button"    @click="submitUserAccountNameSearch"    style="background-color: skyblue;    color: black;" > 검색 </el-button>
           <button   type="button"    style="min-width: 600px;     visibility: hidden;" >  a  </button>
           <button     type="button"    @click="resetKeywordTrialCount"> 참여 횟수 리셋 </button>
         </el-form-item>
