@@ -27,11 +27,18 @@ const mutations = {
     state.currentSelectedUserId = payload
   },
 
+
+
   setKeywordShopAimedison: (state, payload) => {
     state.keywordShopAimedison = payload
   },
-
   
+
+  addKeywordShopAimedison: (state, payload) => {
+    state.keywordShopAimedison.push(payload);
+  },
+
+
 
 }
 
