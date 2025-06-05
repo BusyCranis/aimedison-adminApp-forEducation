@@ -392,6 +392,9 @@ export default {
       }
 
 
+      console.log(this.postForm.appUseFor.appEventKeywordList);
+
+
       const keywordAppUseFor = {
         appUseFor: "appforeventspec",
         appEventKeywordList: this.postForm.appUseFor.appEventKeywordList,
