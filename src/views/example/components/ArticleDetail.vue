@@ -69,14 +69,20 @@
 
           <button   type="button"    @click="addTargetKeyword">추가</button>
 
-
         </el-form-item>
 
 
-        <div    v-for="item in postForm.appUseFor.appEventKeywordList"      >
+        <el-row :gutter="8">
+          <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 8}" :lg="{span: 6}" :xl="{span: 4}" style="padding-right:8px;margin-bottom:30px;">
+            <TransactionTable />
+          </el-col>
+        </el-row>
+
+
+        <!-- <div    v-for="item in postForm.appUseFor.appEventKeywordList"      >
           {{ item.value }}    
-          <!-- <button     type="button"      @click="removeTargetKeyword(item.keywordId)">삭제</button> -->
-        </div>
+          <button     type="button"      @click="removeTargetKeyword(item.keywordId)">삭제</button>
+        </div> -->
 
 
 
