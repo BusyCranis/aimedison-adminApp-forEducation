@@ -15,7 +15,7 @@
 
       <template slot-scope="{row}">
 
-        <button     type="button"      @click="removeTargetKeyword(row.keywordId)">삭제</button>
+        <el-button     type="button"      @click="removeTargetKeyword(row.keywordId)"     style="background-color: skyblue;    color: black;    padding: 5px;" >삭제</el-button>
       
 
         <!-- <el-tag :type="row.status | statusFilter">
