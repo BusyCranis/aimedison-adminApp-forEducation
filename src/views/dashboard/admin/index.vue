@@ -259,7 +259,9 @@ export default {
     })
 
 
-    console.log(this.$el)
+    // console.log(this.$el)
+
+    console.log(this.dailyStatResponse.data)
 
     this.$nextTick(() => {
       // this.initChart()
