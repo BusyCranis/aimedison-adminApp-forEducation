@@ -263,6 +263,14 @@ export default {
 
     console.log(this.dailyStatResponse.data)
 
+
+    this.chart = echarts.init(document.getElementById('barchartcomponent'), 'macarons')
+
+
+    this.tokenCountChart = echarts.init(document.getElementById('chattokencountchart'), 'macarons')
+
+
+
     this.$nextTick(() => {
       // this.initChart()
 
