@@ -293,11 +293,10 @@ export default {
     // await axios.post("/app/checkshopexist", {})
 
     async getKeywordAppInfo() {
-      console.log("getKeywordAppInfo...");
+      // console.log("getKeywordAppInfo...");
       let resFromKeywordAppServer = await axios.post("/app/checkshopexist", {
         shopId: window.cafe24aimedisonkeywordappshopid
       })
-
 
 
 
@@ -315,6 +314,17 @@ export default {
       this.postForm.uiConfigOption.shopAppColors.mainSpaceColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.mainSpaceColor);
       this.postForm.uiConfigOption.shopAppColors.userMessageBoxColor = this.convertRgbToHex(resFromKeywordAppServer.data.uiConfigOption.shopAppColors.userMessageBoxColor);
 
+
+
+
+      if(document.querySelectorAll(".cell")) {
+        if(document.querySelectorAll(".cell").length > 0) {
+          for(let i = 0; document.querySelectorAll(".cell").length; i++) {
+            document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
+            document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+          }
+        }
+      }
 
     },
 
