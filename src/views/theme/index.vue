@@ -171,7 +171,7 @@ export default {
     async requestInsertScriptInService() {
       const confirmPrompt = "정말로 이 앱을 설치하시겠습니까?";
 
-      
+
       if(this.useConfirmHandler(confirmPrompt) === true) {
 
       }
@@ -192,6 +192,12 @@ export default {
 
 
     async deactivateAppService() {
+      const confirmPrompt = "정말로 이 앱의 설치를 해제하시겠습니까?";
+
+      
+      if(this.useConfirmHandler(confirmPrompt) === true) {
+
+      }
     
 
       let resultFromDeact = await axios.post("/app/deactivate", {
@@ -207,6 +213,12 @@ export default {
     },
 
     async SetReInstallAppService() {
+      const confirmPrompt = "정말로 이 앱을 재설치하시겠습니까?";
+
+      
+      if(this.useConfirmHandler(confirmPrompt) === true) {
+
+      }
     
 
       let resultFromDeact = await axios.post("/app/reinstallapp", {
