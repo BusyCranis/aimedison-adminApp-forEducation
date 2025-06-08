@@ -53,6 +53,20 @@ export default {
 
     // this.fetchData()
   },
+
+  mounted() {
+   
+    console.log(document.querySelectorAll(".cell"))
+    for(let i = 0; document.querySelectorAll(".cell").length; i++) {
+      document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
+      document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+    }
+
+
+
+  },
+
+
   methods: {
     removeTargetKeyword(eachId) {
 
