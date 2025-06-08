@@ -267,6 +267,8 @@ export default {
 
     console.log(this.dailyStatResponse.data)
 
+    this.hasLoadedChatTokenDataFromServer = true;
+
 
     this.chart = echarts.init(document.getElementById('barchartcomponent'), 'macarons')
 
