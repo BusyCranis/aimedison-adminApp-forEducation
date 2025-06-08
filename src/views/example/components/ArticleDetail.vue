@@ -317,14 +317,17 @@ export default {
 
 
 
-      if(document.querySelectorAll(".cell")) {
-        if(document.querySelectorAll(".cell").length > 0) {
-          for(let i = 0; document.querySelectorAll(".cell").length; i++) {
-            document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
-            document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+      setTimeout(() => {
+        if(document.querySelectorAll(".cell")) {
+          if(document.querySelectorAll(".cell").length > 0) {
+            for(let i = 0; document.querySelectorAll(".cell").length; i++) {
+              document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
+              document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+            }
           }
         }
-      }
+      }, 25);
+      
 
     },
 
@@ -446,15 +449,21 @@ export default {
 
 
 
-
-      if(document.querySelectorAll(".cell")) {
-        if(document.querySelectorAll(".cell").length > 0) {
-          for(let i = 0; document.querySelectorAll(".cell").length; i++) {
-            document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
-            document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+      setTimeout(() => {
+        if(document.querySelectorAll(".cell")) {
+          if(document.querySelectorAll(".cell").length > 0) {
+            for(let i = 0; document.querySelectorAll(".cell").length; i++) {
+              document.querySelectorAll(".cell")[i].style.paddingLeft = "0px";
+              document.querySelectorAll(".cell")[i].style.paddingRight = "0px";
+            }
           }
         }
-      }
+      }, 25);
+
+    
+
+
+
 
     },
 
