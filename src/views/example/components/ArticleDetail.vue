@@ -112,17 +112,17 @@
         <br>
 
 
-        챗봇 색상      <br>
+        챗봇 색상     <span   style="line-height: 60px;"><br></span>
 
-        헤더  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.headerColor"   >   <br>
+        헤더  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.headerColor"   >   <span   style="line-height: 35px;"><br></span>
 
-        본문  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.mainSpaceColor" >   <br>
+        본문  <input  type="color"      v-model="postForm.uiConfigOption.shopAppColors.mainSpaceColor" >   <span   style="line-height: 35px;"><br></span>
 
-        메시지 입력창  <input  type="color"    v-model="postForm.uiConfigOption.shopAppColors.inputBoxColor" >   <br>
+        메시지 입력창  <input  type="color"    v-model="postForm.uiConfigOption.shopAppColors.inputBoxColor" >   <span   style="line-height: 35px;"><br></span>
 
-        사용자 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.userMessageBoxColor"    >   <br>
+        사용자 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.userMessageBoxColor"    >   <span   style="line-height: 35px;"><br></span>
 
-        챗봇 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.answerMessageBoxColor"    >   <br>
+        챗봇 메시지  <input  type="color"     v-model="postForm.uiConfigOption.shopAppColors.answerMessageBoxColor"    >   <span   style="line-height: 35px;"><br></span>
 
 
 
