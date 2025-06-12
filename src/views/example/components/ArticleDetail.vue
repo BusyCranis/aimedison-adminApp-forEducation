@@ -509,11 +509,9 @@ export default {
         document.getElementById("submitchangebutton").style.marginLeft = "640px";
       } else if(window.innerWidth <= 750 && window.innerWidth > 450) {
         document.getElementById("submitchangebutton").style.marginLeft = "350px";
+      } else if(window.innerWidth <= 450) {
+        document.getElementById("submitchangebutton").style.marginLeft = "200px";
       }
-
-
-
-
 
     },
 
