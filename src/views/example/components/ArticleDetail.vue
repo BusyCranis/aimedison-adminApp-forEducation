@@ -58,12 +58,12 @@
           </el-col>
         </el-row> -->
 
-        <el-form-item style="margin-bottom: 0px;" label-width="70px" label="인사말:">
+        <el-form-item style="margin-bottom: 0px;"    label-width="70px"    label="인사말:      ">
           <el-input v-model="postForm.greeting" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
         </el-form-item>
 
-        <el-form-item style="margin-bottom: 0px;" label-width="100px" label="이벤트 문장:">
+        <el-form-item style="margin-bottom: 0px;"    label-width="100px"     label="이벤트 문장:">
           <el-input v-model="targetKeyword" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
           <!-- <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span> -->
 
@@ -143,7 +143,7 @@
 
 
 
-      <el-button    type="button"     style="margin-left: 900px;    background-color: skyblue;    color: black;"   @click="submitChangedAppSettings">
+      <el-button    type="button"     style="margin-left: 750px;    background-color: skyblue;    color: black;"   @click="submitChangedAppSettings">
         변경사항 적용
       </el-button>
 
