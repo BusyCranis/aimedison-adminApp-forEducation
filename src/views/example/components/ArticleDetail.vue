@@ -499,8 +499,8 @@ export default {
       document.getElementById("submitchangebutton")
      
 
-      if (window.innerWidth < 768) {
-        document.getElementById("submitchangebutton").style.marginLeft = "100px";
+      if (window.innerWidth > 1550) {
+        document.getElementById("submitchangebutton").style.marginLeft = "1395px";
       
       } else {
         document.getElementById("submitchangebutton").style.marginLeft = "300px";
