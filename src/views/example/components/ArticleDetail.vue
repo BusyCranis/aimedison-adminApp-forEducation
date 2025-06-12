@@ -496,16 +496,19 @@ export default {
 
 
     applyResponsiveStyle() {
-      document.getElementById("submitchangebutton")
-     
+      console.log(window.innerWidth)
+      console.log(document.getElementById("submitchangebutton"))
 
       if (window.innerWidth > 1550) {
         document.getElementById("submitchangebutton").style.marginLeft = "1395px";
-      
-      } else if(window.innerWidth) {
-        document.getElementById("submitchangebutton").style.marginLeft = "300px";
-      
+      } else if(window.innerWidth <= 1550) {
+        document.getElementById("submitchangebutton").style.marginLeft = "1295px";
       }
+
+
+
+
+      
     },
 
 
