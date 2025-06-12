@@ -501,14 +501,16 @@ export default {
 
       if (window.innerWidth > 1550) {
         document.getElementById("submitchangebutton").style.marginLeft = "1395px";
-      } else if(window.innerWidth <= 1550) {
-        document.getElementById("submitchangebutton").style.marginLeft = "1295px";
+      } else if(window.innerWidth <= 1550 && window.innerWidth > 1350) {
+        document.getElementById("submitchangebutton").style.marginLeft = "1200px";
+      } else if() {
+        
       }
 
 
 
 
-      
+
     },
 
 
