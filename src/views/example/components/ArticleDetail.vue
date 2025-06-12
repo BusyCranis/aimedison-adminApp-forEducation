@@ -138,12 +138,12 @@
 
 
 
-      <br>
+      <br>  <br>
 
 
 
 
-      <el-button    type="button"     style="margin-left: 10px;    background-color: skyblue;    color: black;"   @click="submitChangedAppSettings">
+      <el-button    type="button"     style="margin-left: 900px;    background-color: skyblue;    color: black;"   @click="submitChangedAppSettings">
         변경사항 적용
       </el-button>
 
