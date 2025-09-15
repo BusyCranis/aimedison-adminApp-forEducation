@@ -23,7 +23,11 @@
       v-model="displayTime"
     
     
-      type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time"   
+      type="datetime" format="yyyy-MM-dd HH:mm:ss" 
+      
+      value-format="yyyy-MM-dd HH:mm:ss"
+      
+      placeholder="Select date and time"   
 
 
       @change="inputPickDateTime"
@@ -987,8 +991,18 @@ export default {
 
 
 
-    inputPickDateTime() {
+    async inputPickDateTime() {
+      await this.$nextTick();
+
       console.log(this.displayTime);
+
+
+
+
+
+
+
+
 
 
 
