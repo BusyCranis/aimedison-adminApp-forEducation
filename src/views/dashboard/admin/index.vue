@@ -25,7 +25,7 @@
     
       type="datetime" format="yyyy-MM-dd HH:mm:ss" 
       
-      value-format="yyyy-MM-dd HH:mm:ss"
+      value-format="yyyy년MM월dd일 HH시mm분ss초"
       
       placeholder="Select date and time"   
 
