@@ -295,7 +295,7 @@ export default {
     await this.getKeywordAppInfo()
 
 
-    this.displayKeyword = $store.state.aimedison.keywordShopAimedison[0].value;
+    this.displayKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
 
 
     this.applyResponsiveStyle()
