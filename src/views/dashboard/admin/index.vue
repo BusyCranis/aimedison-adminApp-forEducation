@@ -13,10 +13,25 @@
 
 
 
+    <!-- <button >
+    </button> -->
 
 
     
-    <el-date-picker type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time" />
+    <el-date-picker 
+    
+      v-model="displayTime"
+    
+    
+      type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time"   
+
+
+      @change="inputPickDateTime"
+    
+    
+    
+    
+    />
     
 
 
@@ -239,6 +254,9 @@ export default {
 
 
       hasLoadedChatTokenDataFromServer: false,
+
+
+      displayTime: "",
 
 
 
@@ -966,6 +984,21 @@ export default {
 
 
     },
+
+
+
+    inputPickDateTime() {
+      console.log(this.displayTime);
+
+
+
+
+    },
+
+
+
+
+
 
 
 
