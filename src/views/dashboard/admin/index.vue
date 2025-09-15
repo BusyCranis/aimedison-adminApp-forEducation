@@ -57,13 +57,23 @@
       
       ~  
 
-      <select   v-model="endTCyear"> 
+      <!-- <select   v-model="endTCyear"> 
         <option   v-for="item in yearTCvalue"   :value="item"> {{ item }} </option>  
       </select>년 
       <select   v-model="endTCmonth" >
         <option   v-for="item in monthTCvalue"    :value="item"  > {{ item }} </option>
       </select>월 
-      <input type="number"    v-model="endTCday"    />일        
+      <input type="number"    v-model="endTCday"    />일         -->
+
+
+      <el-date-picker 
+        v-model="displayEndTime"
+        type="datetime" format="yyyy-MM-dd HH:mm:ss" 
+        value-format="yyyy구분MM구분dd구분HH구분mm구분ss"
+        placeholder="Select date and time"   
+        @change="inputPickEndDateTime"
+      />
+
 
       <button   type="button"    style="max-width: 1px;     visibility: hidden;" >  a  </button>
 
@@ -275,7 +285,7 @@ export default {
 
 
 
-      
+
 
 
 
