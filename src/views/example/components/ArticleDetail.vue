@@ -78,7 +78,9 @@
         </el-row> -->
 
 
-        {{ $store.state.aimedison.keywordShopAimedison[0].value }}
+        <!-- {{ $store.state.aimedison.keywordShopAimedison[0].value }} -->
+
+        {{ displayKeyword }}
 
 
         <!-- <div    v-for="item in postForm.appUseFor.appEventKeywordList"      >
@@ -292,7 +294,7 @@ export default {
   async mounted() {
     await this.getKeywordAppInfo()
 
-    
+
     this.displayKeyword = $store.state.aimedison.keywordShopAimedison[0].value;
 
 
