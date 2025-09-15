@@ -109,7 +109,7 @@
         type="datetime" format="yyyy-MM-dd HH:mm:ss" 
         value-format="yyyy구분MM구분dd구분HH구분mm구분ss"
         placeholder="Select date and time"   
-        @change="inputPickStartDateTime"
+        @change="inputPickSomeStartDateTime"
       />
       
       ~  
@@ -128,7 +128,7 @@
         type="datetime" format="yyyy-MM-dd HH:mm:ss" 
         value-format="yyyy구분MM구분dd구분HH구분mm구분ss"
         placeholder="Select date and time"   
-        @change="inputPickStartDateTime"
+        @change="inputPickSomeEndDateTime"
       />
 
 
@@ -292,6 +292,9 @@ export default {
       displayTime: "",
       displayEndTime: "",
 
+
+      displaySomeTime: "",
+      displaySomeEndTime: "",
 
 
 
@@ -1068,6 +1071,7 @@ export default {
       await this.$nextTick();
 
       console.log(this.displayTime);
+      displaySomeTime: "",
       const unitDateTimeArray = this.displayTime.split("구분");
 
 
@@ -1075,6 +1079,11 @@ export default {
       this.startTCyear = Number(unitDateTimeArray[0]);
       this.startTCmonth = Number(unitDateTimeArray[1]);
       this.startTCday = Number(unitDateTimeArray[2]);
+
+
+      startYear: 0,
+      startMonth: 0,
+      startDay: 0,
 
     },
 
@@ -1084,6 +1093,7 @@ export default {
       await this.$nextTick();
 
       console.log(this.displayTime);
+      displaySomeEndTime: "",
       const unitDateTimeArray = this.displayTime.split("구분");
 
 
@@ -1091,6 +1101,12 @@ export default {
       this.startTCyear = Number(unitDateTimeArray[0]);
       this.startTCmonth = Number(unitDateTimeArray[1]);
       this.startTCday = Number(unitDateTimeArray[2]);
+
+
+  
+      endYear: 0,
+      endMonth: 0,
+      endDay: 0,
 
     },
 
