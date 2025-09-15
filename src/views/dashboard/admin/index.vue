@@ -105,7 +105,7 @@
 
 
       <el-date-picker 
-        v-model="displayTime"
+        v-model="displaySomeTime"
         type="datetime" format="yyyy-MM-dd HH:mm:ss" 
         value-format="yyyy구분MM구분dd구분HH구분mm구분ss"
         placeholder="Select date and time"   
@@ -124,7 +124,7 @@
 
 
       <el-date-picker 
-        v-model="displayTime"
+        v-model="displaySomeEndTime"
         type="datetime" format="yyyy-MM-dd HH:mm:ss" 
         value-format="yyyy구분MM구분dd구분HH구분mm구분ss"
         placeholder="Select date and time"   
@@ -1070,20 +1070,14 @@ export default {
     async inputPickSomeStartDateTime() {
       await this.$nextTick();
 
-      console.log(this.displayTime);
-      displaySomeTime: "",
-      const unitDateTimeArray = this.displayTime.split("구분");
+      console.log(this.displaySomeTime);
+      const unitDateTimeArray = this.displaySomeTime.split("구분");
 
 
       console.log(unitDateTimeArray);
-      this.startTCyear = Number(unitDateTimeArray[0]);
-      this.startTCmonth = Number(unitDateTimeArray[1]);
-      this.startTCday = Number(unitDateTimeArray[2]);
-
-
-      startYear: 0,
-      startMonth: 0,
-      startDay: 0,
+      this.startYear = Number(unitDateTimeArray[0]);
+      this.startMonth = Number(unitDateTimeArray[1]);
+      this.startDay = Number(unitDateTimeArray[2]);
 
     },
 
@@ -1092,21 +1086,14 @@ export default {
     async inputPickSomeEndDateTime() {
       await this.$nextTick();
 
-      console.log(this.displayTime);
-      displaySomeEndTime: "",
-      const unitDateTimeArray = this.displayTime.split("구분");
+      console.log(this.displaySomeEndTime);
+      const unitDateTimeArray = this.displaySomeEndTime.split("구분");
 
 
       console.log(unitDateTimeArray);
-      this.startTCyear = Number(unitDateTimeArray[0]);
-      this.startTCmonth = Number(unitDateTimeArray[1]);
-      this.startTCday = Number(unitDateTimeArray[2]);
-
-
-  
-      endYear: 0,
-      endMonth: 0,
-      endDay: 0,
+      this.endYear = Number(unitDateTimeArray[0]);
+      this.endMonth = Number(unitDateTimeArray[1]);
+      this.endDay = Number(unitDateTimeArray[2]);
 
     },
 
