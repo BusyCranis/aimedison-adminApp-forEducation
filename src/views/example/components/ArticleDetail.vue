@@ -254,7 +254,10 @@ export default {
         content: [{ validator: validateRequire }],
         source_uri: [{ validator: validateSourceUri, trigger: 'blur' }]
       },
-      tempRoute: {}
+      tempRoute: {},
+      displayKeyword: ""
+
+
     }
   },
   computed: {
@@ -288,6 +291,10 @@ export default {
 
   async mounted() {
     await this.getKeywordAppInfo()
+
+    
+    this.displayKeyword = $store.state.aimedison.keywordShopAimedison[0].value;
+
 
     this.applyResponsiveStyle()
 
