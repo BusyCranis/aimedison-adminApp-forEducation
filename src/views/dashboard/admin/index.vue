@@ -8,17 +8,15 @@
       <line-chart :chart-data="lineChartData" />
     </el-row> -->
 
-    <!-- <br /><br /><br /><br /><br /><br /><br /><br /> -->
+    <br /><br /><br /><br /><br /><br /><br /><br />
     <!-- <br /><br /><br /><br /> -->
 
 
 
 
 
-    <el-form-item label-width="120px" label="Publish Time:" class="postInfo-container-item">
-      <el-date-picker v-model="displayTime" type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time" />
-    </el-form-item>
-
+    
+    <el-date-picker type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time" />
     
 
 
