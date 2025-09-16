@@ -505,10 +505,7 @@ export default {
 
 
 
-      // this.$store.commit("aimedison/addKeywordShopAimedison", {
-      //   value: this.targetKeyword,
-      //   keywordId: "eventkeyword" + Date.now()
-      // });
+    
 
     },
 
