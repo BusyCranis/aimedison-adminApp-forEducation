@@ -41,7 +41,8 @@ const mutations = {
 
   changeKeywordShopAimedison: (state, payload) => {
     console.log(payload);
-    const sameIndex = state.keywordShopAimedison.findIndex(item => item.keywordId === payload)[0];
+    console.log(payload.keywordId);
+    const sameIndex = state.keywordShopAimedison.findIndex(item => item.keywordId === payload.keywordId)[0];
 
 
     console.log(sameIndex);
@@ -49,7 +50,7 @@ const mutations = {
 
 
 
-    
+
 
     
   },

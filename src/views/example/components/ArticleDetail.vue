@@ -497,13 +497,10 @@ export default {
 
     changeTargetKeyword(sameId) {
 
-      this.displayIdKeyword
-      this.displayKeyword
-
 
       this.$store.commit("aimedison/changeKeywordShopAimedison", {
         keywordId: this.displayIdKeyword,
-        
+        value: this.displayKeyword
       });
 
 
