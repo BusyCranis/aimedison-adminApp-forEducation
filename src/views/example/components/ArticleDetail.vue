@@ -296,6 +296,7 @@ export default {
   async mounted() {
     await this.getKeywordAppInfo()
 
+    await this.$nextTick();
 
     this.displayIdKeyword = this.$store.state.aimedison.keywordShopAimedison[0].keywordId;
     this.displayKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
@@ -354,6 +355,12 @@ export default {
         }
       }, 5);
 
+
+      await this.$nextTick();
+
+
+      this.displayIdKeyword = this.$store.state.aimedison.keywordShopAimedison[0].keywordId;
+      this.displayKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
 
     },
 
