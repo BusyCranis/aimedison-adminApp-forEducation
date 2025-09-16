@@ -1,5 +1,9 @@
 <template>
   <div class="createPost-container">
+
+
+    <br /><br />
+
     <el-form ref="postForm"  :rules="rules" class="form-container">
 
       <!-- <sticky :z-index="10" :class-name="'sub-navbar '+postForm.status">
