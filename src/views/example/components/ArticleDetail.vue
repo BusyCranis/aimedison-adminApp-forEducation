@@ -307,6 +307,8 @@ export default {
     this.displayIdKeyword = this.$store.state.aimedison.keywordShopAimedison[0].keywordId;
     this.displayKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
 
+    this.targetKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
+
 
     this.applyResponsiveStyle()
 
@@ -367,6 +369,8 @@ export default {
 
       this.displayIdKeyword = this.$store.state.aimedison.keywordShopAimedison[0].keywordId;
       this.displayKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
+
+      this.targetKeyword = this.$store.state.aimedison.keywordShopAimedison[0].value;
 
     },
 
