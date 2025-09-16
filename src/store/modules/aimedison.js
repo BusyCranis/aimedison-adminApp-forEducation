@@ -42,17 +42,14 @@ const mutations = {
   changeKeywordShopAimedison: (state, payload) => {
     console.log(payload);
     console.log(payload.keywordId);
+    console.log(payload.value);
     const sameIndex = state.keywordShopAimedison.findIndex(item => item.keywordId === payload.keywordId)[0];
 
+    
 
     console.log(sameIndex);
+    state.keywordShopAimedison[sameIndex].value = payload.value;
 
-
-
-
-
-
-    
   },
 
   removeKeywordShopAimedison: (state, payload) => {
