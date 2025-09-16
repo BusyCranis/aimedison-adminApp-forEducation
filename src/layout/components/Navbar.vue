@@ -7,7 +7,7 @@
 
     <div class="right-menu">
 
-      <img      />
+      <img    :src="primeImagePath"    />
 
 
 
