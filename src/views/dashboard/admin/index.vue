@@ -1133,7 +1133,7 @@ export default {
         csvRows.push(row.join(','));
       }
 
-      
+
 
       console.log(csvRows);
 
@@ -1146,7 +1146,7 @@ export default {
     async downloadAllRecordAsExcelFile() {
       console.log(window.cafe24aimedisonkeywordappshopid);
       // "/keyword/record/excel"
-      const objArray = await axios.post("http://175.119.224.227:5003/keyword/record/excel", {
+      const objArray = await axios.post("/keyword/record/excel", {
         shopId: window.cafe24aimedisonkeywordappshopid
       })
 
