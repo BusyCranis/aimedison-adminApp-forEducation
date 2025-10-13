@@ -1141,15 +1141,16 @@ export default {
 
 
     async downloadAllRecordAsExcelFile() {
+      console.log(window.cafe24aimedisonkeywordappshopid);
       // "/keyword/record/excel"
       const objArray = await axios.post("http://175.119.224.227:5003/keyword/record/excel", {
-        shopId: keyForSaveAuthTokenInLocal
+        shopId: window.cafe24aimedisonkeywordappshopid
       })
 
 
 
       console.log(objArray.data);
-      const csvString = objectArrayToCSV(objArray.data);
+      const csvString = this.objectArrayToCSV(objArray.data);
       const utf8Bom = '\uFEFF';
 
 
