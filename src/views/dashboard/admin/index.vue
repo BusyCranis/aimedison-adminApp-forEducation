@@ -200,7 +200,9 @@
 
 
 
-    <button> 엑셀 다운로드 </button>
+    <button
+      @click="downloadAllRecordAsExcelFile"
+    > 엑셀 다운로드 </button>
 
 
 
