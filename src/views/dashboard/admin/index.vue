@@ -368,7 +368,7 @@ export default {
 
     console.log(this.startYear);
 
-    this.dailyStatResponse = await axios.post("/admin/daily/chatcount", {
+    this.dailyStatResponse = await axios.post("http://175.119.224.227:5003/admin/daily/chatcount", {
       shopId: window.cafe24aimedisonkeywordappshopid,
     });
 
@@ -538,7 +538,7 @@ export default {
 
         return;
       } else {
-        let searchResult = await axios.post("/admin/search/daily/chatcount", {
+        let searchResult = await axios.post("http://175.119.224.227:5003/admin/search/daily/chatcount", {
           shopId: window.cafe24aimedisonkeywordappshopid,
           dailyChatStatResponse: this.dailyStatResponse.data,
           startYear: this.startYear,
@@ -852,7 +852,7 @@ export default {
 
         return;
       } else {
-        let searchResult = await axios.post("/admin/search/daily/chatcount", {
+        let searchResult = await axios.post("http://175.119.224.227:5003/admin/search/daily/chatcount", {
           shopId: window.cafe24aimedisonkeywordappshopid,
           dailyChatStatResponse: this.dailyStatResponse.data,
           startYear: this.startTCyear,
